@@ -8,103 +8,103 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <title>Amanda Helmer - Resume</title>
     <style>
+        /* General styles */
         body {
             font-family: "Open Sans", system-ui;
-            margin: 50px;
-            color: #333;
-            background-color: gainsboro ;
+            margin: 10px;
+            padding: 0;
+            background-color: gainsboro;
         }
+
         .container {
             margin: auto;
-            max-width: 900px;
+            max-width: 100%;
+            padding: 10px;
             background-color: whitesmoke;
             border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            width: auto;
         }
+
         .headerContent {
             background-color: #1e3557;
             color: white;
             padding: 30px;
             text-align: center;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-
         }
+
         .headerContent h1 {
             font-weight: 700;
             font-size: 3rem;
             margin: 0;
         }
+
         .headerContent p {
             font-weight: 300;
             font-size: 1.2rem;
         }
+
         .nav {
             list-style: none;
             padding: 0;
             margin: 20px 0 0;
         }
+
         .nav li {
             display: inline;
             margin: 0 15px;
         }
+
         .nav li a {
             color: white;
             text-decoration: none;
             font-weight: 500;
         }
+
         .nav li a:hover {
             text-decoration: underline;
         }
+
         .section {
             width: auto;
             background-color: #fff;
-            margin: 50px;
+            margin: 50px 10px;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
+
         h2 {
             padding-bottom: 10px;
             font-size: 1.8rem;
             color: #283593;
         }
+
         .job, .education {
             margin-bottom: 30px;
         }
+
         ul {
             padding-left: 20px;
         }
+
         ul li {
             margin-bottom: 10px;
         }
-        .ctaWrapper {
 
+        .ctaWrapper {
             display: flex;
             flex-direction: row;
             justify-content: center;
             gap: 20px;
         }
+
         .contact {
-            margin: 50px;
+            margin: 50px 10px;
             padding: 30px;
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
             background-color: #fff;
         }
-        .ctaBtn {
-            padding: 12px 25px;
-            background-color: dimgrey;
-            color: white;
-            text-decoration: none;
-            font-weight: 600;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        .ctaBtn:hover {
-            background-color: #2196F3;
-        }
 
         .ctaBtn {
             padding: 12px 25px;
@@ -115,24 +115,19 @@
             border-radius: 5px;
             transition: background-color 0.3s ease;
         }
+
         .ctaBtn:hover {
             background-color: #3949ab;
         }
-        .certs {
-            height: fit-content;
-            margin: 50px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            padding: 20px 0 0 10px;
-            background-color: #fff;
-        }
-        .skills {
-            margin: 50px;
+
+        .certs, .skills {
+            margin: 50px 10px;
             padding: 30px;
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
             background-color: #fff;
         }
+
         .tag-cloud {
             display: inline-block;
             color: white;
@@ -141,6 +136,7 @@
             background-color: #2196F3;
             margin-top: 8px;
         }
+
         .footer {
             text-align: center;
             padding: 30px;
@@ -150,11 +146,90 @@
             bottom: 0;
             width: auto;
             height: auto;
-
         }
+
         .footer a {
             color: #f4f4f4;
             text-decoration: none;
+        }
+
+        /* Mobile-specific styles */
+        @media only screen and (max-width: 768px) {
+            body {
+                margin: 0;
+            }
+
+            .headerContent h1 {
+                font-size: 1.5rem; /* Reduce header size */
+            }
+
+            .headerContent p {
+                font-size: 0.9rem; /* Smaller subheading */
+            }
+
+            .nav li {
+                display: block; /* Stack navigation links */
+                margin: 10px 0;
+                text-align: center;
+            }
+
+            .section {
+                margin: 15px 5px; /* Reduce margin on smaller screens */
+                padding: 10px;
+            }
+
+            .ctaWrapper {
+                display: flex;
+                flex-direction: column; /* Stack buttons vertically */
+                justify-content: center;
+
+            }
+
+            .ctaBtn {
+                width: auto; /* Full width for buttons on mobile */
+                margin-bottom: 10px;
+
+            }
+            .certs {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                flex-wrap: wrap;
+
+
+            }
+            .skills {
+                justify-content: center;
+
+            }
+            .contact {
+                margin: 15px 5px; /* Reduce margins on mobile */
+                padding: 15px;
+            }
+
+            h2 {
+                font-size: 1.5rem; /* Reduce section header size */
+            }
+
+            ul {
+                padding-left: 15px; /* Smaller padding for lists */
+            }
+
+            .job h3, .education h3 {
+                font-size: 1.2rem; /* Adjust job/education title size */
+            }
+
+            .footer {
+
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+
+            .footer p {
+                font-size: 0.9rem; /* Smaller font size for footer */
+            }
         }
     </style>
 </head>
@@ -183,7 +258,6 @@
         <p>I am a motivated Business Administration professional with 10+ years of customer service and project management experience. Currently pursuing a Bachelor of Science in Business Administration at Purdue University Global, I have a passion for analytical thinking and leadership.</p>
     </section>
 
-
     <!-- Experience Section -->
     <section id="experience" class="section">
         <h2>Experience</h2>
@@ -203,23 +277,25 @@
                 <li>Demonstrated design and copywriting skills.</li>
                 <li>Delivered on-time and on-budget initiatives to drive audience engagement.</li>
             </ul>
+        </div>
         <div class="job">
-        <h3>Creative Content | Founder & Web Designer</h3>
-        <p><em> December 2021- April 2023</em></p>
-        <ul>
-            <li>Designed and developed responsive websites using HTML, CSS, and JavaScript. </li>
-            <li>Developed client trust and maintained strong relationships.</li>
-            <li>Conducted user testing to gather feedback and improve website usability</li>
-        </ul>
-    </div> <div class="job">
-        <h3>Sales Associate | GE Designs</h3>
-        <p><em>September 2017 - March 2020</em></p>
-        <ul>
-            <li> Provided exceptional customer service through various channels, including chat, phone, and email.</li>
-            <li>Maintained a comprehensive customer database by documenting daily interactions.</li>
-            <li>Identified customer needs and implemented solutions to improve customer satisfaction and drive sales</li>
-        </ul>
-    </div>
+            <h3>Creative Content | Founder & Web Designer</h3>
+            <p><em> December 2021 - April 2023</em></p>
+            <ul>
+                <li>Designed and developed responsive websites using HTML, CSS, and JavaScript.</li>
+                <li>Developed client trust and maintained strong relationships.</li>
+                <li>Conducted user testing to gather feedback and improve website usability.</li>
+            </ul>
+        </div>
+        <div class="job">
+            <h3>Sales Associate | GE Designs</h3>
+            <p><em>September 2017 - March 2020</em></p>
+            <ul>
+                <li> Provided exceptional customer service through various channels, including chat, phone, and email.</li>
+                <li>Maintained a comprehensive customer database by documenting daily interactions.</li>
+                <li>Identified customer needs and implemented solutions to improve customer satisfaction and drive sales.</li>
+            </ul>
+        </div>
     </section>
 
     <!-- Education Section -->
@@ -232,6 +308,7 @@
         </div>
     </section>
 
+    <!-- Skills Section -->
     <section id="skills" class="skills">
         <h2>Skills</h2>
         <hr>
@@ -246,6 +323,7 @@
         <span class="tag-cloud">Automation</span>
     </section>
 
+    <!-- Certifications Section -->
     <section id="certs" class="certs">
         <h2>Certifications</h2>
         <hr>
@@ -289,23 +367,26 @@
         <div data-iframe-width="150" data-iframe-height="270"
              data-share-badge-id="bcbc89d2-fd38-4b1d-8925-61f7afac3219"
              data-share-badge-host="https://www.credly.com"></div>
-        <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+        <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script><!-- Add certification badges here -->
     </section>
 
+    <!-- Contact Section -->
     <section id="contact" class="contact">
         <h2>Contact</h2>
         <hr>
         <div>
             <p>Email: <a href="mailto:ahelmer@mail.com">ahelmer@mail.com</a></p>
-            <p>Phone:<a href="tel:6692896969">(669)289-6969</a></p>
+            <p>Phone: <a href="tel:6692896969">(669) 289-6969</a></p>
         </div>
     </section>
 
+    <!-- Footer Section -->
     <footer class="footer">
         <div class="ctaWrapper">
             <a class="ctaBtn" href="/index.html" download>Download Resume</a>
             <a class="ctaBtn" href="https://www.linkedin.com/in/helmera" target="_blank">Visit LinkedIn</a>
-        </div> <p>© 2024 Amanda Helmer</p>
+        </div>
+        <p>© 2024 Amanda Helmer</p>
     </footer>
 </div>
 
